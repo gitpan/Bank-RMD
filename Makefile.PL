@@ -5,8 +5,10 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     NAME              => 'Bank::RMD',
     VERSION_FROM      => 'lib/Bank/RMD.pm', # finds $VERSION
-    PREREQ_PM         => {}, # e.g., Module::Name => 1.1
+    PREREQ_PM         => {
+			DateTime => 0.20
+			}, # e.g., Module::Name => 1.1
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
       (ABSTRACT_FROM  => 'lib/Bank/RMD.pm', # retrieve abstract from module
-       AUTHOR         => 'Tyler Hardison <thardiso@apple.com>') : ()),
+       AUTHOR         => 'Tyler Hardison <tyler@seraph-net.net>') : ()),
 );
